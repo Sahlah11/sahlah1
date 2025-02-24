@@ -17,3 +17,108 @@
 .topnav a.active{
  color: #008CBA;
 }
+/* تنسيق الروابط العامة */
+.link {
+    display: block; /* يجعل الرابط يأخذ سطرًا كاملاً */
+    text-align: center; /* توسيط النص داخل الرابط */
+    padding: 15px; /* إضافة مسافة داخلية */
+    margin: 10px auto; /* جعل المسافة متناسقة بين الروابط */
+    font-size: 18px; /* تكبير حجم الخط */
+    font-weight: bold; /* جعل الخط عريض */
+    text-decoration: none; /* إزالة التسطير */
+    width: 80%; /* جعل الروابط تأخذ 80% من عرض الصفحة */
+    border-radius: 5px; /* تقريب الحواف */
+}
+
+/* تخصيص الألوان لكل رابط */
+.link1 {
+    background-color: rgb(151, 235, 173); /* خلفية خضراء فاتحة */
+    color: red; /* نص باللون الأحمر */
+}
+
+.link2 {
+    background-color: rgb(130, 134, 130); /* خلفية رمادية */
+    color: yellow; /* نص باللون الأصفر */
+}
+
+.link3 {
+    background-color: rgb(0, 0, 0); /* خلفية سوداء */
+    color: white; /* نص باللون الأبيض */
+}
+
+/* تأثير عند تمرير الماوس */
+.link:hover {
+    opacity: 0.8;
+}
+
+/* تأثير عند الضغط */
+.link:active {
+    color: green;
+
+
+}
+
+
+/* عنوان القسم الأول (تنسيق النصوص) */
+.formatting-title {
+    background-color: #F5F5DC; /* لون بيج */
+    color: black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* عنوان القسم الثاني (قوائم الإنترنت) */
+.listing-title {
+    background-color: #4F9495; /* لون أخضر مزرق */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* تنسيق عنوان الجدول */
+.table-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* تنسيق الجدول الأول */
+.fruit-table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.fruit-table th, .fruit-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.fruit-table th {
+    background-color: #f2f2f2;
+}
+
+/* تنسيق الجدول الثاني */
+.camel-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.camel-table th, .camel-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.camel-table img {
+    display: block;
+    margin: 0 auto;
+}
+
+.camel-title {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}

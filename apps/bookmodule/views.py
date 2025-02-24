@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 def index(request):
         name = request.GET.get("name") or "world!"  #add this line
         return render(request, "bookmodule/index.html" , {"name": name})  #your render line
@@ -35,14 +36,18 @@ def viewbook(request, bookId):
 
 def aboutus(request):
      return render(request, 'bookmodule/aboutus.html')
- 
 
 
-
-
-
-
-
-
-
+def lab5Page(request):
+    return render(request, 'bookmodule/lab5.html')
 # Create your views here.
+
+
+def formatting_page(request):
+    return render(request, 'bookmodule/lab5.html')
+
+
+def listing_page(request):
+    return render(request, 'listing.html')
+def tables_page(request):
+    return render(request, 'bookmodule/tables.html')
