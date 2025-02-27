@@ -40,12 +40,9 @@ def aboutus(request):
 
 def lab5Page(request):
     return render(request, 'bookmodule/lab5.html')
-# Create your views here.
-
 
 def formatting_page(request):
     return render(request, 'bookmodule/lab5.html')
-
 
 def listing_page(request):
     return render(request, 'listing.html')

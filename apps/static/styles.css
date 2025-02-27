@@ -17,63 +17,55 @@
 .topnav a.active{
  color: #008CBA;
 }
-/* تنسيق الروابط العامة */
 
-/* جعل الروابط تمتد بعرض الصفحة بالكامل */
 .link1, .link2, .link3 {
-    display: block; /* يجعل الرابط يأخذ عرض الصفحة بالكامل */
-    width: 100%; /* يجعل الرابط يمتد على عرض الصفحة */
-    text-align: center; /* توسيط النص داخل الرابط */
-    padding: 15px; /* إضافة مسافة داخلية */
-    font-size: 18px; /* تكبير حجم النص */
-    font-weight: bold; /* جعل الخط عريض */
-    text-decoration: none; /* إزالة التسطير */
+    display: block; 
+    width: 100%;
+    text-align: center; 
+    padding: 15px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
 
-/* تخصيص الألوان لكل رابط */
 .link1 {
-    background-color: rgb(151, 235, 173); /* خلفية خضراء */
+    background-color: rgb(151, 235, 173); 
     color: red;
 }
 
 .link2 {
-    background-color: rgb(130, 134, 130); /* خلفية رمادية */
+    background-color: rgb(130, 134, 130); 
     color: yellow;
 }
 
 .link3 {
-    background-color: rgb(0, 0, 0); /* خلفية سوداء */
+    background-color: rgb(0, 0, 0); 
     color: white;
 }
 
-/* تأثير عند تمرير الماوس */
 .link1:hover, .link2:hover, .link3:hover {
     opacity: 0.8;
 }
-/* تأثير عند الضغط */
+
 .link:active {
-    color: green;
+    color: green;}
 
 
-}
-
-
-/* عنوان القسم الأول (تنسيق النصوص) */
 .formatting-title {
-    background-color: #F5F5DC; /* لون بيج */
+    background-color: #F5F5DC; 
     color: black;
     padding: 10px;
     text-align: left;
 }
 
-/* عنوان القسم الثاني (قوائم الإنترنت) */
+
 .listing-title {
-    background-color: #4F9495; /* لون أخضر مزرق */
+    background-color: #4F9495; 
     color: white;
     padding: 15px;
     text-align: center;
 }
-/* تنسيق عنوان الجدول */
+
 .table-title {
     text-align: center;
     font-size: 22px;
@@ -81,7 +73,7 @@
     margin-top: 20px;
 }
 
-/* تنسيق الجدول الأول */
+
 .fruit-table {
     width: 50%;
     margin: 0 auto;
