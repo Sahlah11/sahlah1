@@ -23,7 +23,7 @@ urlpatterns = [
      path('index2/<int:val1>/', apps.bookmodule.views.index2),  #add only this line
     path('books/', include("apps.bookmodule.urls")),  # ربط URLs الخاصة بـ bookmodule
     path('users/', include("apps.usermodule.urls")) ,
-   path('', apps.bookmodule.views.index) 
+    path('', apps.bookmodule.views.index) 
 ]
   # استيراد include
 

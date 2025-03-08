@@ -1,4 +1,6 @@
 from django.urls import path
+
+
 from . import views  
 
 
@@ -24,6 +26,8 @@ urlpatterns = [
    
     path('listing/', views.listing_page, name="listing_page"),
     path('tables/', views.tables_page, name="tables_page"),
+    path('search/', views.search_books, name='search_books'),
+
     
 ]
 
