@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Book
 
 def index(request):
         name = request.GET.get("name") or "world!"  #add this line
@@ -69,6 +70,22 @@ def search_books(request):
            if not contained and isAuthor and string in item['author'].lower():contained = True
            
            if contained: newBooks.append(item)
-       return render(request, 'bookmodule/bookList.html', {'books':newBooks})
+       return render(request, 'bookmodule/list_books.html', {'books':newBooks})
     return render(request, 'bookmodule/search.html')
+def simple_query(request):
 
+ mybooks=Book.objects.filter(title__icontains='and') # <- multiple objects
+
+ return render(request, 'bookmodule/list_books.html', {'books':mybooks})
+
+def complex_query(request):
+
+ mybooks=Book.objects.filter(author__isnull = False).filter(title__icontains='and').filter(edition__gte = 30).exclude(price__lte = 100)[:10]
+
+ if len(mybooks)>=1:
+
+  return render(request, 'bookmodule/list_books.html', {'books':mybooks})
+
+ else:
+
+  return render(request, 'bookmodule/index.html')

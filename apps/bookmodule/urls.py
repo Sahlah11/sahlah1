@@ -27,8 +27,9 @@ urlpatterns = [
     path('listing/', views.listing_page, name="listing_page"),
     path('tables/', views.tables_page, name="tables_page"),
     path('search/', views.search_books, name='search_books'),
-
-    
+    path('query1/',views.simple_query,name='books.simple_query'),
+    path('query2/',views.complex_query,name='books.complex_query'),
+    path('books/', views.list_books, name='list_books'),
 ]
 
 

@@ -4,10 +4,28 @@
 {% block title %} List of Books {% endblock title %}
 
 {% block content %}
-    <h1>List of Books</h1>
-    <ul>
-        <li>Book 1 - Introduction to Django</li>
-        <li>Book 2 - Python for Beginners</li>
-        <li>Book 3 - Web Development with Django</li>
-    </ul>
-{% endblock content %}
+   
+
+
+
+{% if books %}
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Edition</th>
+        </tr>
+        {% for i in books %}
+        <tr>
+            <td>{{ i.title }}</td>
+            <td>{{ i.author }}</td>
+            <td>{{ i.price }}</td>
+            <td>{{ i.edition }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No books found matching your search criteria.</p>
+    {% endif %}
+    {% endblock content %}
